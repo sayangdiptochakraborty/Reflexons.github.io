@@ -1,0 +1,192 @@
+@import "https://fonts.googleapis.com/css?family=PT+Mono";
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+body{
+    background-color: #000;
+    max-width: 1400px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'PT Mono',monospace;
+    margin: auto;
+}
+h1{
+    color:yellow;
+    font-family: 'Roboto Mono',monospace;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inpform{
+    margin-top:5%;
+}
+.inp{
+    border:transparent;
+    border-bottom:2px solid red;
+    border-radius:5px;
+    background: transparent;
+    margin-top:15px;
+    font-family: 'PT Mono',monospace;
+    font-size:15px;
+    width:300px;
+    color: yellow;
+    height:20px;
+}
+
+.inp:focus{
+    outline: none;
+    border:none;
+    border-bottom:2px solid yellow;
+    border-radius:5px;
+    background: transparent;
+    margin-top:15px;
+    font-family: 'PT Mono',monospace;
+    font-size:15px;
+    width:300px;
+    color: aqua;
+    height:20px;
+}
+
+select option{
+    background: rgba(0, 0, 0);
+}
+select option:focus{
+    outline: none;
+    border:transparent;
+}
+.inp[type=number]::-webkit-inner-spin-button,
+.inp[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inp[type=submit]{
+    width:100px;
+    border: 2px solid red;
+    color:yellow;
+    cursor: pointer;
+    height: 40px;
+    margin-left:80px;
+}
+.inp[type=button]{
+    width:200px;
+    border: 2px solid red;
+    color:yellow;
+    cursor: pointer;
+    height: 40px;
+    margin-left:30px;
+}
+::placeholder {
+    color: yellow;
+    opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: yellow;
+  }
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: yellow;
+  }
+.inp[type=submit]:hover{
+    width:100px;
+    border: 2px solid blue;
+    color:black;
+    background: red;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.inp[type=button]:hover{
+    width:200px;
+    border: 2px solid blue;
+    color:black;
+    font-weight: bolder;
+    background: red;
+    cursor: pointer;
+}
+
+/* Gallery */
+.container.gallery-container {
+    background-color: #000;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: rgb(51, 50, 50);
+}
+img{
+    border:2px solid red;
+    border-radius:5px;
+}
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #000;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+  

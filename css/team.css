@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=PT+Mono";
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+body{
+    background-color: #000;
+    max-width: 1400px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'PT Mono',monospace;
+    margin: auto;
+}
+h1{
+    color:yellow;
+    font-family: 'Roboto Mono',monospace;
+}
+.inp{
+  border:transparent;
+  border-bottom:2px solid red;
+  border-radius:5px;
+  background: transparent;
+  margin-top:15px;
+  font-family: 'PT Mono',monospace;
+  font-size:15px;
+  width:300px;
+  color: yellow;
+  height:20px;
+}
+.inp[type=button]{
+    width:200px;
+    border: 2px solid red;
+    color:yellow;
+    cursor: pointer;
+    height: 40px;
+    margin-left:30px;
+}
+.inp[type=button]:hover{
+    width:200px;
+    border: 2px solid blue;
+    color:black;
+    font-weight: bolder;
+    background: red;
+    cursor: pointer;
+}
+/* Card styles for rotation */
+.row{
+  margin-top:25px;
+  margin-bottom: 25PX;
+}
+p{
+  font-size: 15px;
+  font-weight:100;
+  font-family:'PT Mono',monospace;
+
+}
+.rotate-container {
+  position: relative;
+}
+.rotate-container .card-front, .rotate-container .card-back {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 0.5s linear 0s;
+}
+.rotate-container .card-back {
+  -webkit-transform: perspective(1600px) rotateY(180deg);
+          transform: perspective(1600px) rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.rotate-container .rotate-card-front {
+  -webkit-transform: perspective(1600px) rotateY(-180deg);
+          transform: perspective(1600px) rotateY(-180deg);
+}
+.rotate-container .rotate-card-back {
+  -webkit-transform: perspective(1600px) rotateY(0deg);
+          transform: perspective(1600px) rotateY(0deg);
+}
+
+/* Modified card styles */
+.card {
+  -webkit-box-shadow: 2px -2px 17px -1px rgba(255,255,255,1);
+  -moz-box-shadow: 2px -2px 17px -1px rgba(255,255,255,1);
+  box-shadow: 2px -2px 17px -1px rgba(255,255,255,1);
+}
+.card .card-header p {
+  margin: 0;
+}
+.card .card-background {
+  background: url("../img/logo_inv.jpg");
+  height: 8em;
+  background-position: center center;
+  background-size: cover;
+}
+.card .avatar {
+  max-width: 6em;
+  max-height: 6em;
+  margin-top: -4em;
+  margin-bottom: 1em;
+  border: 4px solid white;
+  border-radius: 50%;
+  background: radial-gradient(#e3e3e3, #329A7C, #109381);
+}
+.card .btn {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.card .social-links li {
+  margin: 0.5em;
+}
+.card .social-links a {
+  font-size: 1.5em;
+}
