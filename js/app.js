@@ -386,7 +386,7 @@ function handle_input(e) {
         populate_text("Type help for a list of commands")) : t();
         break;
     case "schedule":
-        "def" == context ? generate_table({"Monday":"test"},"red","green"):t();
+        "def" == context ? generate_table({"Monday":""},"red","green"):t();
         break;
     case "campus" : 
         "def" == context ? populate_text("Acharya Prafulla Chandra Ray Shiksha Prangan was setup in the year 2013.From the year 2015 B.Tech students from 3 branches namely CSE, OOE and IT study here. From the year 2015 Reflexons was shifted here from the Rajabazar Campus. <br>Location : JD-2 Sector-3 Salt Lake : Kolkata -700106 <br>Maps Link : <a href='https://www.google.com/maps/place/University+of+Calcutta,+Technology+campus/@22.5678515,88.4155599,15z/data=!4m5!3m4!1s0x0:0x8e2706e94fa62bd3!8m2!3d22.5678515!4d88.4155599' style='color:blue'><u>Here</u></a>"):t();
